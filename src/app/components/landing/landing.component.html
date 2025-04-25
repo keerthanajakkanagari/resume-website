@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keerthana's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1>Keerthana's Tech Portfolio 💻💡
-        </h1>
+        <h1>Keerthana's Tech Portfolio 💻💡</h1>
         <div class="nav-links">
-          <button class="nav-button" (click)="scrollToSection('about')" >
+          <button class="nav-button" (click)="scrollToSection('about')">
             <p class="text">About</p>
           </button>
-          <button class="nav-button" (click)="scrollToSection('experience')" >
+          <button class="nav-button" (click)="scrollToSection('experience')">
             <p class="text">Experience</p>
           </button>
           <button class="nav-button" (click)="scrollToSection('education')">
@@ -24,14 +26,14 @@
           <!-- <button class="nav-button" (click)="showContent('projects')">
             <p class="text">Projects</p>
           </button> -->
-          <button class="nav-button" (click)="scrollToSection('skills')" >
+          <button class="nav-button" (click)="scrollToSection('skills')">
             <p class="text">Skills</p>
           </button>
           <button class="nav-button" (click)="scrollToSection('certificates')">
-            <p class="text" >Certifications</p>
+            <p class="text">Certifications</p>
           </button>
           <button class="nav-button" (click)="downloadResume()">
-            <p class="text" >Download Resume</p>
+            <p class="text">Download Resume</p>
           </button>
         </div>
       </div>
@@ -85,10 +87,10 @@
           <app-education id="education" #section></app-education>
           <!-- <app-projects id="projects"></app-projects> -->
           <app-skills id="skills" #section></app-skills>
-          <app-certificates id="certificates"  #section></app-certificates>
+          <app-certificates id="certificates" #section></app-certificates>
         </div>
 
-         <div class="modal-overlay" *ngIf="showPreview" (click)="closePreview()">
+        <div class="modal-overlay" *ngIf="showPreview" (click)="closePreview()">
           <div class="modal-content" (click)="$event.stopPropagation()">
             <div class="spinner" *ngIf="pdfLoading"></div>
             <iframe
@@ -97,7 +99,7 @@
               frameborder="0"
             ></iframe>
           </div>
-        </div> 
+        </div>
 
         <div class="contact-button-container">
           <button class="contact-button" (click)="openMessageDialog()">
