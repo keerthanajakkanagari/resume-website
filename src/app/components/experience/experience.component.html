@@ -1,0 +1,25 @@
+<section class="experience-section">
+  <h2 class="experience-title">Experience 👩‍💻</h2>
+  
+  <div class="experience-container">
+    <div *ngFor="let exp of exp" class="experience-card">
+      <h3 class="experience-role">{{ exp.title }}</h3>
+      <!-- <p class="experience-company">{{ exp.company }}</p> -->
+      <p class="experience-company">
+        <img [src]="exp.logoUrl" alt="{{ exp.company }} logo" class="company-logo" />
+        {{ exp.company }}
+      </p>
+      <p class="experience-duration">{{ exp.duration }}</p>
+      
+      <!-- Skills Section -->
+      <div class="experience-skills">
+        <strong>Skills:</strong>
+        <div class="skills-list">
+          <span *ngFor="let skill of exp.skills" class="skill-card">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

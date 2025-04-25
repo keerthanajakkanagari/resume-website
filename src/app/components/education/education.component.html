@@ -1,0 +1,13 @@
+<section class="education-section">
+    <h2 class="section-title">Education 🎓</h2>
+    <div class="education-grid">
+      <div *ngFor="let edu of education" class="education-card">
+        <h3 class="edu-degree">{{ edu.degree }}</h3>
+        <p class="edu-institution">{{ edu.institution }}</p>
+        <p class="edu-duration">{{ edu.duration }}</p>
+        <p class="edu-score" *ngIf="edu.gpa">GPA: {{ edu.gpa }}</p>
+        <p class="edu-score" *ngIf="edu.percentage">Percentage: {{ edu.percentage }}%</p>
+      </div>
+    </div>
+  </section>
+  

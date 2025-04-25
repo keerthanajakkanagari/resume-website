@@ -1,0 +1,7 @@
+<div
+  *ngIf="show"
+  class="notification"
+  [ngClass]="type === 'success' ? 'success' : 'error'"
+>
+  {{ message }}
+</div>

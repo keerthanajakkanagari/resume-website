@@ -1,0 +1,11 @@
+<div class="certifications-section">
+    <h3 style="font-family: Open Sans">Certifications 🏅 [Click to View]</h3>
+    <div class="certification-list">
+      <div *ngFor="let cert of certifications" class="certification-item">
+        <a [href]="cert.url" target="_blank" class="cert-link">
+          <!-- <i class="cert-icon"></i> -->
+          <span class="cert-title">{{ cert.title }}</span>
+        </a>
+      </div>
+    </div>
+  </div>

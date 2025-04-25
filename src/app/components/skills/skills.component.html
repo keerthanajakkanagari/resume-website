@@ -1,0 +1,12 @@
+<section class="skills-wrapper">
+    <h2 class="main-title">Skills 🧠</h2>
+  
+    <div class="skill-category" *ngFor="let category of skills | keyvalue">
+      <h4 class="category-name">{{ category.key | titlecase }}</h4>
+      <div class="skill-pills">
+        <span class="pill" *ngFor="let skill of category.value">
+          <i [class]="getIcon(skill)"></i> {{ skill }}
+        </span>
+      </div>
+    </div>
+  </section>
