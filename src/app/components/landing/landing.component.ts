@@ -55,7 +55,7 @@ export class LandingComponent {
     this.showPreview = true;
     this.pdfLoading = true;
     this.http
-      .get('assets/7_Resume_KJ.pdf', { responseType: 'blob' })
+      .get('assets/8_Resume_KJ.pdf', { responseType: 'blob' })
       .subscribe((blob) => {
         const url = URL.createObjectURL(blob);
         this.resumeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
@@ -66,7 +66,7 @@ export class LandingComponent {
   public downloadResume() {
     const doc = new jsPDF();
     this.http
-      .get('assets/7_Resume_KJ.pdf', { responseType: 'blob' })
+      .get('assets/8_Resume_KJ.pdf', { responseType: 'blob' })
       .subscribe((blob) => {
         const link = document.createElement('a');
         const url = window.URL.createObjectURL(blob);
