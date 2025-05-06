@@ -13,9 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "dist/sandbox"
-            },
+            "outputPath": "dist/sandbox",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
